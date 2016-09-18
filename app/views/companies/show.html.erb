@@ -1,0 +1,73 @@
+<ul>
+<li>Name: <%= @stock.name%></li>
+
+<li>Symbol: <%= @stock.symbol %></li>
+
+<li>Ask: <%= @stock.ask %></li>
+
+<li>Average Daily Volume: <%= @stock.average_daily_volume %> shares per day</li>
+
+<li>After Hours Change Realtime: <%= @stock.after_hours_change_realtime%></li>
+
+<li>Last trade date: <%= @stock.last_trade_date %></li>
+
+<li>Dividend share: <%= @stock.dividend_share %></li>
+
+<li>Trade date: <%= @stock.trade_date%></li>
+
+<li>Earnings share : <%= @stock.earnings_share%></li>
+
+<li>Eps_estimate_current_year :<%= @stock.eps_estimate_current_year%> </li>
+
+<li>Eps_estimate_next_year : <%= @stock.eps_estimate_next_year%></li>
+
+<li>Eps estimate next quarter : <%= @stock.eps_estimate_next_quarter%></li>
+
+<li>LAST---: <%= @get_quotes["quotes"]["quote"]["last"]%></li>
+</ul>
+
+
+
+
+
+<br />
+
+Total buy votes: <%= @buy_votes %>
+<br />
+Total sell votes: <%= @sell_votes %>
+<br />
+Total Hold votes: <%= @hold_votes %>
+<br/>
+
+ <%= link_to "Buy", "/votes?vote=buy&company=#{@company.id}", method: :post %>
+ <%= link_to "Sell", "/votes?vote=sell&company=#{@company.id}", method: :post %>
+ <%= link_to "Hold", "/votes?vote=hold&company=#{@company.id}", method: :post %>
+ <br/>
+ <br/>
+ <br/>
+ <br/>
+Five day buy votes : <%= @five_day_buy_votes %><br>
+Five day sell votes :<%= @five_day_sell_votes %><br>
+Five day hold votes :<%= @five_day_hold_votes %>
+
+<div class="row">
+  <div class="class">
+    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
+    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
+    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
+    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
+    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
+  </div>
+</div>
+
+<%= line_chart @companies %>
+<%= line_chart @companies %>
+<%= line_chart @companies %>
+<%= line_chart @companies %>
+<%= line_chart @companies %>
+
+
+
+
+
+

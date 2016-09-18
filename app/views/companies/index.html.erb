@@ -1,0 +1,16 @@
+<div class = "col-md-6">
+  <table class = "table">
+
+    <tr>
+      <th>Company Name</th>
+      <th>Company Code</th>
+    </tr>
+
+    <% @companies.each do |company|%>
+      <tr>
+        <th><%= company.company_name %></th>
+        <th><%= company.company_code %></th>
+      </tr>
+    <%end%>
+  </table>
+</div>

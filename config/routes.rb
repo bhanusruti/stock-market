@@ -10,7 +10,9 @@ Rails.application.routes.draw do
   get '/home', to: 'users#show'
   post '/users', to: 'users#create'
 
-  root to: 'users#dashboard' # '/' path
+  get '/about', to: 'pages#about'
+
+  root to: 'pages#welcome' # '/' path
   
   get '/users/:id', to: 'users#show'
 

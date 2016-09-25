@@ -11,9 +11,25 @@
 // about supported directives.
 //
 //= require jquery
-//= require bootstrap-sprockets
 //= require jquery_ujs
+//= require jquery-2.2.3.min
+//= require bootstrap.min
+//= require jquery.easing.1.3.min
+//= require appear
+//= require jquery.mixitup.min
+//= require jquery.magnific-popup.min
+//= require jquery.superslides.min
+//= require wow.min
+//= require jquery.newsTicker.min
+//= require owl.carousel.min
+//= require waypoints.min
+//= require jquery.counterup.min
+//= require jquery.ajaxchimp.min
+//= require jquery.toast.min
+//= require bootstrap-progressbar.min
+//= require gmaps
+//= require validator
+//= require custom
 //= require Chart.bundle
 //= require chartkick
-//= require turbolinks
 //= require_tree .

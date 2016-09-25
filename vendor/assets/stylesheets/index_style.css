@@ -1,0 +1,40 @@
+
+    html, body{background-color:#FFFFFF;color:#545454;}
+    h1,h2,h3,h4,h5,h6{font-family: 'Arial', sans-serif !important;font-style:normal;color:#141414;font-weight: 400;}
+    section table{background-color:#FFFFFF;}
+    h1 {font-size: 30px;font-weight: 400;}
+    ::-moz-selection{background:#F2F2F2;color:#000000;}
+    ::selection{background:#F2F2F2;color:#000000;}
+    a.brand{background-image:url("assets/img/logo.png");}
+    a, a:hover, a:active{color:#FF4314;}
+    hr{border-top:1px solid #DBE3DC;border-bottom:1px solid #F6FFF7;}
+    div.navbar-inner, .navbar .nav li ul{background:#C9C8C3;color:#141414;http://static.revaxarts-themes.com/noise.gif}
+    a.btn-navbar{background:#C9C8C3;color:#141414;}
+    .navbar .nav li a{color:#141414;}
+    .navbar .nav li a:hover, .navbar .nav li.active a{text-shadow:none;}
+    div.navbar-inner ul{}
+    .marketing-byline{color:#918C8C;}
+    .navbar .nav > li a{color:#171717;}
+    .navbar .nav > li a:hover, a.btn-navbar:hover{background:#F2F2F2;color:#000000;}
+    .navbar .nav .active > a, .navbar .nav .active > a:hover, a.btn-navbar:active{background-color:#F2F2F2;color:#000000;}
+    .navbar .nav li ul li a:hover{background:#F2F2F2;color:#000000;}
+    .navbar .nav li ul li a:active{background:#F2F2F2;color:#000000;}
+    .btn-primary {
+        background-image: -moz-linear-gradient(top, #B3204D, #7D1636);
+        background-image: -ms-linear-gradient(top, #B3204D, #7D1636);
+        background-image: -webkit-gradient(linear, 0 0, 0 B3204D%, from(#C9C8C3), to(#7D1636));
+        background-image: -webkit-linear-gradient(top, #B3204D, #7D1636);
+        background-image: -o-linear-gradient(top, #B3204D, #7D1636);
+        background-image: linear-gradient(top, #B3204D, #7D1636);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#B3204D', endColorstr='#7D1636', GradientType=0);
+        border-color: #FFFFFF;
+        color:#FFFFFF;
+    }
+    .btn-primary:hover,
+    .btn-primary:active,
+    .btn-primary.active,
+    .btn-primary.disabled,
+    .btn-primary[disabled] {
+      background-color: #7D1636;
+    }
+    #documenter_copyright{display:block !important;visibility:visible !important;}

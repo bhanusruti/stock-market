@@ -1,0 +1,1657 @@
+/* =========================================
+
+# Template Name: Basic
+# Author: Themehexa
+# Description: Multipage Multipurpose HTML Template
+# Version: 1.0
+
+========================================= */
+
+/*
+=========================================
+Index
+-----------------------------------------
+
+# 01. body
+# 02. typography
+# 03. custom padding, margin
+# 04. custom headline, title
+# 05. custom styles
+# 06. custom icons
+# 07. custom buttons
+# 08. preloader
+# 09. navigation
+# 10. navbar toggle
+# 11. dropdown menu
+# 12. search system
+# 13. header
+# 14. common banner style
+# 15. news ticker
+# 16. about
+# 17. portfolio
+# 18. portfolio - single
+# 19. call to action 01
+# 20. features
+# 21. other features
+# 22. video
+# 23. reviews
+# 24. blog
+# 25. subscribe
+# 26. skills
+# 27. work
+# 28. team
+# 29. facts
+# 30. faq
+# 31. 404 page
+# 32. signup & signin page
+# 33. services
+# 34. pricing
+# 35. blog posts
+# 36. blog post - single
+# 37. contact
+# 38. footer
+# 39. scroll top
+# 40. media queries
+
+*/
+
+/* ======================================
+ *  01. body
+/* ====================================== */
+
+body {
+  font-family: 'PT Sans', Arial, Sans-serif;
+  color: #696969;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+/* ======================================
+ *  02. typography
+/* ====================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Open Sans', arial, sans-serif;    
+  color: #000000;
+  line-height: 1.4em;
+}
+
+h1 {
+  font-size: 60px
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 18px
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 13px;
+}
+
+h6 {
+  font-size: 11px;
+}
+
+p {
+  line-height: 1.8em;
+}
+
+ul li {
+  line-height: 1.9em;
+}
+
+a {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #30A7E9;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;  
+}
+
+a:hover, 
+a:focus,
+a:active {
+  color: #1F94D3;
+  text-decoration: none;
+  outline: none;
+}
+
+/* ======================================
+ *  03. custom padding, margin
+/* ====================================== */
+
+.top-pad-40 {
+  padding-top: 40px;
+}
+
+.top-bottom-pad-40 {
+  padding: 40px 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+/* ======================================
+ *  04. custom headline, title
+/* ====================================== */
+
+.small-title {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 1.5px;
+}
+
+.small-title-2 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+}
+
+.small-title-3 {
+  font-family: 'PT Sans', arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+  font-style: italic;
+  margin-top: 0px;
+  letter-spacing: .25px;
+}
+
+.banner-headline {
+  font-family: 'Open Sans Condensed', arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 300;
+  text-transform: none;
+}
+
+/* ======================================
+ *  05. custom styles
+/* ====================================== */
+
+.small-caret span {
+  font-size: 12px;
+  color: #30A7E9;
+  margin-right: 15px;
+}
+
+.small-caret-2 span {
+  font-size: 12px;
+  color: #30A7E9;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+
+.custom-overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.50);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.border-style {
+  position: relative;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.border-style:after {
+  background-color: #ECECEC;
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 50px;
+  top: 50%;
+  margin-left: 20px;
+}
+
+.breadcrumb {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 8px 0px;
+  background-color: transparent;
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+}
+
+.highlight {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  background-color: #30A7E9;
+  color: #FFFFFF;
+  padding: 3px 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;  
+}
+
+.highlight:hover {
+  color: #FFFFFF;
+}
+
+/* ======================================
+ *  06. custom icons
+/* ====================================== */
+
+.custom-icon span {
+  font-size: 40px;
+  color: #30A7E9;
+}
+
+.custom-icon-2 span {
+  font-size: 30px;
+  color: #30A7E9;
+  margin-right: 15px; 
+}
+
+/* ======================================
+ *  07. custom buttons
+/* ====================================== */
+
+.custom-btn-1 {
+  font-size: 11px;
+  color: #FFFFFF;
+  background-color: #30A7E9;
+  border-radius: 1px;
+  margin-top: 40px;
+  transition: all 0.3s ease-in;
+}
+
+.custom-btn-1:hover,
+.custom-btn-1:focus {
+  color: #FFFFFF;
+  background-color: #1F94D3;  
+}
+
+.custom-btn-2 {
+  font-size: 11px;
+  color: #FFFFFF;
+  background-color: #30A7E9;
+  border-radius: 1px;
+  margin-bottom: 20px;
+  transition: all 0.3s ease-in;
+}
+
+.custom-btn-2:hover,
+.custom-btn-2:focus {
+  color: #FFFFFF;
+  background-color: #1F94D3;  
+}
+
+/* ======================================
+ *  08. preloader
+/* ====================================== */
+
+#loader {
+  background-color: #FFFFFF;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+}
+
+#loader .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 43px;
+  height: 43px;
+  margin: -20px 0 0 -20px;
+  background-image: url(../img/preloader.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+
+/* ======================================
+ *  09. Navigation
+/* ====================================== */
+
+nav {
+  transition: all 0.9s ease 0s;
+}
+
+.navbar-default .navbar-brand {
+  margin-top: -20px;
+}
+
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #30A7E9;
+}
+
+.navbar-default {
+  position: fixed;
+  border-radius: 0;
+  border-color: transparent;
+  border: none;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 10px 0px;
+  z-index: 500;
+  background-color: #FFFFFF;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);  
+}
+
+.nav > li > a {
+  padding: 10px 12px;
+}
+
+.navbar-default .nav li a {
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #111111;
+  transition: all 0.2s ease-in;
+}
+
+.navbar-default .navbar-nav > li > a:focus, 
+.navbar-default .navbar-nav > li > a:hover {
+  color: #111111;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > li > a:hover  {
+  color: #30A7E9;
+  background-color: transparent;
+  outline-style: none;
+}
+
+.navbar-default .navbar-nav > .active> a:hover,
+.navbar-default .navbar-nav > .active> a:focus {
+  color: #30A7E9;
+  background-color: transparent;
+}
+
+/* ======================================
+ *  10. navbar toggle
+/* ====================================== */
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+  background-color: transparent;
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #30A7E9;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: transparent;
+}
+
+/* ======================================
+ *  11. dropdown menu
+/* ====================================== */
+
+.dropdown-menu {
+  padding: 10px 5px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
+  border: 1px solid #ECECEC;
+}
+
+.dropdown:hover .dropdown-menu {
+    margin-top: 0px;
+ }
+
+.dropdown span {
+  padding-left: 5px;
+}
+
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+}
+
+.navbar-nav > li > .dropdown-menu {
+  border-radius: 0px;  
+}
+
+.navbar-nav .open > a, 
+.navbar-nav .open > a:hover,
+.navbar-nav .open > a:focus {
+  border-color: #ECECEC;
+}
+
+.dropdown-menu > li > a {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+  color: #30A7E9;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  background-color: transparent;
+  color: #000000;
+}
+
+/* ======================================
+ *  12. search system
+/* ====================================== */
+
+/* mobile */
+
+#mobile-search button {
+  position: relative;
+}
+
+#mobile-search .btn-success {
+  background-color: #30A7E9;
+  border-color: transparent;
+  border-radius: 0px;
+  padding: 8px 12px;
+  margin-top: -2px;
+}
+
+#mobile-search .form-control {
+  display: table-cell;
+}
+
+.search-box-mobile {
+  margin: 20px 10px;
+  width: auto;
+}
+
+/* desktop */
+
+#search-icon span {
+  font-size: 14px;
+  position: absolute;
+  cursor: pointer;
+  top: 13px;
+}
+
+.search-box {
+  display: none;
+  background-color: rgba(255, 255, 255, 1);
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  position: absolute;  
+  height: 100%;
+  width: 100%;  
+  top: 60px;
+  left: 0;  
+  z-index: 999;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.search-box form .fa-times {
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  top: 20px;  
+  right: 0px;
+  color: #000000;
+}
+
+.search-box form .form-control {
+  font-family: "Open Sans",arial,sans-serif;
+  font-size: 12px;
+  font-weight: 600;  
+  background-color: transparent;
+  border: 0 none;
+  border-radius: 0;
+  box-shadow: none;
+  height: 55px;
+  margin: 0;
+  transition: all 0.3s ease 0s;
+}
+
+
+
+/* ======================================
+ *  13. header
+/* ====================================== */
+
+header .slider-content-wrap {
+  display: table;
+  height: 100%;
+}
+
+header .row {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+header h1 {
+  font-family: 'Open Sans Condensed', arial, sans-serif;
+  color: #FFFFFF;
+  font-size: 65px;
+  font-weight: 600;
+  margin: 0px;
+  letter-spacing: 2px;
+}
+
+header h2 {
+  font-family: 'Open Sans Condensed', arial, sans-serif;  
+  color: #FFFFFF;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0px;
+  text-transform: none;
+  letter-spacing: 2px;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.45);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* animated text slider styling */
+
+.slides-pagination {
+  bottom: 15px;
+}
+
+.slides-pagination a {
+  border: 2px solid #FFFFFF; 
+  margin: 4px;
+  outline: none;
+}
+
+.slides-pagination a.current {
+  background-color: #FFFFFF;
+}
+
+/* end: animated text slider styling */
+
+/* ======================================
+ *  14. common banner style
+/* ====================================== */
+
+.common-banner-style {
+  padding: 120px 0px;  
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;  
+}
+
+#about-banner {
+  background-image: url(../img/background/about-banner.jpg);
+}
+
+#services-banner {
+  background-image: url(../img/background/services-banner.jpg);
+}
+
+#portfolio-banner {
+  background-image: url(../img/background/portfolio-banner.jpg);
+}
+
+#portfolio-details-banner {
+  background-image: url(../img/background/portfolio-details-banner.jpg);
+}
+
+#blog-banner {
+  background-image: url(../img/background/blog-banner.jpg);
+}
+
+#blog-single-banner {
+  background-image: url(../img/background/blog-single-banner.jpg);
+}
+
+#contact-banner {
+  background-image: url(../img/background/contact-banner.jpg);
+}
+
+#faq-banner {
+  background-image: url(../img/background/faq-banner.jpg);
+}
+
+/* ======================================
+ *  15. news ticker
+/* ====================================== */
+
+#newsticker {
+  padding: 40px 0px;
+  border-bottom: 1px solid #F7F7F7;
+}
+
+#newsticker h2 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFFFFF;  
+  background-color: #30A7E9;
+  text-transform: uppercase;
+  display: block;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  margin: 0px;
+  border-radius: 1px;  
+}
+
+.newsticker {
+  padding: 0px 10px 0px 0px;
+}
+
+.newsticker span {
+  color: #30A7E9;
+  font-size: 16px;
+  margin-right: 15px;
+}
+
+.newsticker li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;  
+}
+
+.newsticker a {
+  color: #111111;
+  font-size: 11px;
+}
+
+.newsticker a:hover {
+  text-decoration: underline;
+  outline: none;
+}
+
+/* ======================================
+ *  16. about
+/* ====================================== */
+
+#about {
+  padding: 40px 0px 0px 0px;
+}
+
+.introduction {
+  font-family: 'PT Sans', arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8em;
+}
+
+/* ======================================
+ *  17. portfolio
+/* ====================================== */
+
+#portfolio {
+  padding: 40px 0px;
+}
+
+.portfolio-wrap .mix {
+  display: none;
+  margin-bottom: 30px;
+}
+
+.item-filter {
+  margin-bottom: 40px;
+}
+
+.item-filter ul li {
+  font-family: 'Open Sans', arial, sans-serif;  
+  font-size: 11px;  
+  font-weight: 600;  
+  color: #5A5252;  
+  border: 1px solid #E8E8E8;
+  letter-spacing: 1px;
+  text-transform: uppercase;  
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  transition: all 0.2s ease-in;
+}
+
+.item-filter ul li:hover {
+  color: #FFFFFF;
+  border: 1px solid #30A7E9;
+  background-color: #30A7E9;  
+}
+
+.item-filter ul li.active {
+  color: #FFFFFF;  
+  border: 1px solid #30A7E9;
+  background-color: #30A7E9;
+}
+
+.img-wrap {
+  overflow: hidden;
+  position: relative;
+}
+
+.img-overlay {
+  position: absolute;  
+  top: 0;  
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(269deg, #FFFFFF, #FFFFFF);    
+  width: 100%;
+  height: 100%;  
+  transition: all 0.3s ease 0s;  
+}
+
+.img-wrap:hover .img-overlay {
+  opacity: 0.65;
+}
+
+.work-name {
+  left: 10%;
+  opacity: 0;
+  position: absolute;
+  top: 48%;
+}
+
+.work-name h3 {
+  font-family: 'Open Sans', arial, Sans-serif;
+  font-weight: 600;
+  font-size: 10px;
+  background-color: #30a7e9;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.img-wrap:hover .work-name {
+  opacity: 1;
+  z-index: 900;
+}
+
+/* ======================================
+ *  18. portfolio - single
+/* ====================================== */
+
+#portfolio-single {
+  padding: 40px 0px;
+}
+
+/* ======================================
+ *  19. call to action 01
+/* ====================================== */
+
+#cta-1 {
+  padding: 40px 0px;
+  background-color: #30A7E9;
+}
+
+#cta-1 h2 {
+  font-family: 'Open Sans Condensed', arial, sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  font-style: italic;
+  color: #FFFFFF;
+  margin: 20px 0px;
+  text-transform: none;
+  letter-spacing: 1.5px;
+}
+
+/* ======================================
+ *  20. features
+/* ====================================== */
+
+#features {
+  padding: 40px 0px;  
+  border-top: 1px solid #F7F7F7;    
+}
+
+.k-features {
+  margin-bottom: 30px;
+}
+
+/* ======================================
+ *  21. other features
+/* ====================================== */
+
+#other-features {
+  padding: 40px 0px;  
+  background-color: #F6FBFD;
+  border-top: 1px solid #E2F4FB;   
+  border-bottom: 1px solid #E2F4FB;   
+}
+
+.k-features-2 {
+  margin-bottom: 20px;
+}
+
+/* ======================================
+ *  22. video
+/* ====================================== */
+
+#video {
+  padding: 40px 0px 80px 0px;
+  background-image: url(../img/background/video-background.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#video h2 {
+  font-family: 'Open Sans Condensed', arial, sans-serif;  
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 25px;
+  text-transform: none;
+  letter-spacing: 5px;
+}
+
+.play-icon span {
+  background-color: #30A7E9;
+  color: #FFFFFF;
+  font-size: 20px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 100%;  
+  cursor: pointer;
+}
+
+/* ======================================
+ *  23. reviews
+/* ====================================== */
+
+#reviews {
+  padding: 40px 0px;
+}
+
+#reviews p {
+  line-height: 1.8em;  
+  border: 1px solid #ECECEC;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px #F8F8F8;
+}
+
+#reviews-slider img {
+  border-radius: 1px;
+  margin-bottom: 20px;
+  width: 90px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+  background-color: transparent;
+  border: 2px solid #30A7E9;
+  border-radius: 100%;
+  display: block;
+  height: 10px;
+  margin: 5px;
+  opacity: 0.5;
+  width: 10px;
+}
+
+.owl-theme .owl-controls {
+  margin-top: 50px;
+}
+
+/* ======================================
+ *  24. blog
+/* ====================================== */
+
+#blog {
+  padding: 40px 0px;
+  border-top: 1px solid #F7F7F7;
+}
+
+.blog-wrap {
+  padding-bottom: 20px;
+}
+
+.blog-img-overlay {
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.blog-img-overlay img {
+  transition: all 0.5s ease;
+}
+
+.blog-img-overlay img:hover {
+  transform: scale(1.05);
+}
+
+.blog-info {
+  margin-top: 20px;
+}
+
+/* ======================================
+ *  25. subscribe
+/* ====================================== */
+
+#subscribe {
+  padding: 40px 0px;
+  border-top: 1px solid #F7F7F7;   
+}
+
+.form-control {
+  border-radius: 0;
+  font-family: 'Open Sans', arial , sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  height: 39px;
+  text-transform: none;
+  margin-bottom: 10px;
+  box-shadow: none;
+  border: 1px solid #E2E2E2;
+}
+
+.form-control:focus {
+  border: 1px solid #1F94D3;
+  box-shadow: none;
+}
+
+.subscribe-btn {
+  background-color: #30A7E9;
+  border-radius: 1px;
+  color: #FFFFFF;
+  font-family: 'Open Sans' , arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  transition: all 0.5s ease 0s;
+}
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+  background-color: #1F94D3;
+  color: #FFFFFF;
+  outline-style: none;
+}
+
+/* ======================================
+ *  26. skills
+/* ====================================== */
+
+#skills {
+  padding: 40px 0px 0px 0px;
+}
+
+.progress {
+  height: 3px;
+  border-radius: 4px;
+}
+
+.progress-bar {
+  background-color: #141414;
+}
+
+/* ======================================
+ *  27. work
+/* ====================================== */
+
+#work {
+  padding: 40px 0px;
+  background-color: #F6FBFD;
+  border-bottom: 1px solid #E2F4FB;   
+}
+
+/* ======================================
+ *  28. team
+/* ====================================== */
+
+#team {
+  padding: 40px 0px;  
+  border-bottom: 1px solid #F7F7F7;  
+}
+
+.team-wrap {
+  width: 225px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.social-position {
+  background-color: #30A7E9;
+  bottom: 15px;
+  left: -5px;
+  padding: 5px 15px;
+  position: absolute;
+}
+
+.social-position span {
+  color: #FFFFFF;
+}
+
+#team a {
+  font-size: 15px;
+}
+
+/* ======================================
+ *  29. facts
+/* ====================================== */
+
+#facts {
+  background-image: url(../img/background/facts-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 40px 0px;
+  position: relative;
+}
+
+#facts h2 {
+  color: #FFFFFF;
+}
+
+#facts h3 {
+  font-family: 'Open Sans Condensed', arial, sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 5px;  
+}
+
+.facts-icon span {
+  font-size: 35px;
+  margin-right: 15px;
+  color: #FFFFFF;
+}
+
+/* ======================================
+ *  30. faq
+/* ====================================== */
+
+#faq {
+  padding: 40px 0px; 
+}
+
+#faq .small-title-2 {
+  border-bottom: 1px solid #E7E7E7;
+  margin-bottom: 20px;
+}
+
+.faq-wrap {
+  margin-bottom: 35px;
+}
+
+.arrow span {
+  font-size: 10px;  
+  color: #FFFFFF;  
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #30A7E9;
+  border-radius: 2px;
+  margin-right: 15px;  
+}
+
+.pad-bottom-15 {
+  padding-bottom: 15px;
+}
+
+.custom-search {
+  color: #D5D5D5;
+  text-align: center;
+  font-size: 90px;
+  margin-top: 40px;
+}
+
+/* ======================================
+ *  31. 404 page
+/* ====================================== */
+
+#error {
+  padding: 100px 0px;
+}
+
+#error h2 {
+  font-size: 150px;
+  margin: 0px;
+}
+
+#error h3 {
+  font-family: 'PT Sans', arial, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: .25px;
+  padding-bottom: 40px;
+}
+
+#error span {
+  font-size: 20px;
+  color: #30A7E9;
+  padding: 0px 15px;
+}
+
+/* ======================================
+ *  32. signup & signin page
+/* ====================================== */
+
+#sign {
+  padding: 100px 0px;
+}
+
+#sign .social-login {
+  color: #000;
+  font-size: 11px;
+}
+
+.sign-wrap {
+  background-color: #F6FBFD;
+  border: 1px solid #E2F4FB;
+  padding: 30px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.sign-social-facebook span {
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #3A558C;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.sign-social-twitter span {
+  font-size: 18px;
+  color: #FFFFFF;
+  background-color: #00AEEF;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.separator-wrap {
+  font-size: 20px;
+  font-style: italic;
+  padding: 30px 0px;
+}
+
+.separator-wrap::after, 
+.separator-wrap::before {
+  background-color: #ECECEC;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  margin-left: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 75px;
+}
+
+/* ======================================
+ *  33. services
+/* ====================================== */
+
+#services {
+  padding: 40px 0px 0px 0px;
+}
+
+#services ul {
+  margin-top: 30px;
+}
+
+/* ======================================
+ *  34. pricing
+/* ====================================== */
+
+#pricing {
+  padding: 40px 0px;
+  background-color: #F6FBFD;
+  border-top: 1px solid #E2F4FB;
+  border-bottom: 1px solid #E2F4FB;
+}
+
+.price-wrap {
+  background-color: #FFFFFF;
+  border: 1px solid #E2F4FB;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.package-name {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 1.5px;
+  padding: 5px 10px;
+}
+
+.price {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.month {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;  
+  letter-spacing: 1.5px;  
+  color: #111111;
+  margin-left: 5px;
+}
+
+.price-list {
+  margin-bottom: 40px;
+}
+
+.price-list li {
+  list-style-type: disc;
+  line-height: 1.9em;
+}
+
+/* ======================================
+ *  35. blog posts
+/* ====================================== */
+
+#blog-posts {
+  padding: 40px 0px;
+}
+
+.post-wrap {
+  margin-bottom: 30px;
+}
+
+.post-thumb {
+  overflow: hidden;
+}
+
+.post-title h2 {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #111111;
+  letter-spacing: 1.5px;  
+}
+
+.post-author {
+  margin-bottom: 10px;
+}
+
+.categories, 
+.search {
+  margin-bottom: 30px;
+}
+
+.sidebar-right-wrap h2 {
+  font-size: 11px;
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.custom-list li {
+  border-bottom: 1px solid #ECECEC;
+  padding: 8px 0px;
+}
+
+.custom-list li:last-child {
+  border-bottom: none;
+}
+
+.search input {
+  margin-top: 20px;
+}
+
+.popular-post-wrap {
+  margin-bottom: 20px;
+}
+
+.popular-post-wrap img {
+  margin-bottom: 10px;
+}
+
+.tags li {
+  display: inline-block;
+  border: 1px solid #ECECEC;
+  padding: 1px 5px;
+  margin: 3px;
+  transition: all 0.3s ease-in;
+}
+
+.tags li:hover {
+  cursor: pointer;
+  border: 1px solid #1F94D3;
+}
+
+.tags a {
+  color: #696969;
+}
+
+.post-bottom {
+  border-top: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+.post-bottom span {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.blog-pagination {
+  margin-top: 20px;
+}
+
+#blog-posts .pagination > li > a, .pagination > li > span {
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+#blog-posts .pagination > .active > a, 
+.pagination > .active > a:focus, 
+.pagination > .active > a:hover, 
+.pagination > .active > span, 
+.pagination > .active > span:focus, 
+.pagination > .active > span:hover {
+  background-color: #30A7E9;
+  border-color: #30A7E9;
+}
+
+/* ======================================
+ *  36. blog post - single
+/* ====================================== */
+
+.blog-author h2 {
+  margin-top: 0px;
+}
+
+.blog-author img {
+  margin-bottom: 15px;
+}
+
+.blog-author-social span {
+  font-size: 12px;
+  background-color: #30A7E9;
+  color: #FFFFFF;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.blog-single-border {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ECECEC;
+}
+
+.blog-post-reply {
+  padding-top: 30px;
+}
+
+.blog-post-reply h2 {
+  margin-top: 0px;
+}
+
+.blog-post-reply img {
+  margin-bottom: 15px;
+}
+
+.reply-date {
+  font-size: 10px;
+  color: #30A7E9;
+}
+
+.comment {
+  margin-top: 30px;
+}
+
+/* ======================================
+ *  37. contact
+/* ====================================== */
+
+#map-overlay {
+  position: relative;
+  padding: 40px 0px;
+}
+
+#map-overlay #map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#contact-form {
+  position: relative;
+  z-index: 10;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.75);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn.contact-btn {
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #30A7E9;
+  border-radius: 1px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+}
+
+.btn.contact-btn-2:hover,
+.btn.contact-btn-2:focus {
+  color: #FFFFFF;
+  background-color: #1F94D3;  
+}
+
+/* ======================================
+ *  38. footer
+/* ====================================== */
+
+footer {
+  padding: 80px 0px;
+  border-top: 1px solid #E2F4FB; 
+  background-color: #F6FBFD;
+}
+
+.footer-wrap {
+  margin-bottom: 20px;
+}
+
+.footer-contact {
+  font-family: 'Open Sans', arial, sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.contact-info li {
+  line-height: 2.2em;
+}
+
+.contact-info span {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #30A7E9; 
+}
+
+.footer-icon span {
+  color: #30A7E9;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.footer-social span {
+  font-size: 12px;
+  background-color: #30A7E9;
+  color: #FFFFFF;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+}
+
+/* ======================================
+ *  39. scroll top
+/* ====================================== */
+
+.scroll-top {
+  position: fixed;
+  display: none;
+  z-index: 999;
+  bottom: 20px;
+  right: 20px;
+}
+
+.scroll-top a {
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  background-color: #30A7E9;
+  color: #FFFFFF;
+  border-radius: 2px;
+  padding: 1px 8px;
+}
+
+
+
+/* ======================================
+ *  40. media queries
+/* ====================================== */
+
+@media only screen and (min-width : 320px) {
+
+  header h1 {
+    font-size: 35px;
+  }
+
+  header h2 {
+    font-size: 25px;
+  }
+
+  #cta-1 h2 {
+    font-size: 25px;
+  }
+
+  #services {
+    padding-bottom: 80px;
+  }
+
+  .navbar-nav > li > a, .navbar-nav > li > span {
+    border-bottom: 1px solid #EDEDED;
+  }
+
+  .navbar-nav > li:last-child > a, .navbar-nav > li:last-child > span {
+    border-bottom: none;
+  }
+
+  .dropdown-menu > li:last-child > a {
+    border-bottom: none;
+  } 
+
+}
+
+@media only screen and (min-width: 768px) {
+
+  header h1 {
+    font-size: 55px;
+  }
+
+  header h2 {
+    font-size: 35px;
+  }
+
+  .navbar-nav > li > a, .navbar-nav > li > span {
+    border-bottom: none;
+  }
+   
+}
+
+@media only screen and (min-width: 992px) {
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h2 {
+    font-size: 30px;
+  }
+
+  #cta-1 h2 {
+    font-size: 40px;
+  }  
+
+  #services {
+    padding-bottom: 0px;
+  }  
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #000000;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: #30A7E9;
+  }
+
+}

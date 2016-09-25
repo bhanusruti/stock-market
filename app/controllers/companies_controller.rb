@@ -35,12 +35,12 @@ class CompaniesController < ApplicationController
     @hold_votes = Vote.where(company_id: @company.id, choice: "hold").length
 
    
-    @get_quotes = api_call("https://sandbox.tradier.com/v1/markets/quotes?symbols=INTC")
-    @get_time_and_sales = api_call("https://sandbox.tradier.com/v1/markets/timesales?symbol=INTC")
+    @get_quotes = api_call("https://sandbox.tradier.com/v1/markets/quotes?symbols=#{@company.company_code}")
+    @get_time_and_sales = api_call("https://sandbox.tradier.com/v1/markets/timesales?symbol=#{@company.company_code}")
 
     @company_votes = Vote.where(company_id: @company.id).group(:choice).count
     @companies = Company.group_by_hour_of_day(:created_at, format: "%-l %P").count
-    query = %(http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20IN%20(%22INTC%22)&format=json&env=http://datatables.org/alltables.env)
+    query = %(http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20IN%20(%22#{@company.company_code}%22)&format=json&env=http://datatables.org/alltables.env)
     @company_info = Unirest.get(query).body
     puts @company_info
 

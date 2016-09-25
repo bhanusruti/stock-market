@@ -1,7 +1,72 @@
-<ul>
-<li>Name: <%= @stock.name%></li>
+<div class="container">
+  
+  <div class="col-md-12 companyName"><%=   @stock.name %> </div>
+  <div class="col-md-2 companySymbol"><%= @stock.symbol %> &nbsp;  <%= @stock.ask %> </div>
+  <% if @get_quotes["quotes"]["quote"]["change"] > 0 %>
+  <div class="col-md-10 sharePricePercentageChange" id="green"> <%= @get_quotes["quotes"]["quote"]["change"]%><i class="fa fa-arrow-up"></i>  &nbsp;  <%= @get_quotes["quotes"]["quote"]["change_percentage"]%>%
+  </div>
+  <% else %>
+  <div class="col-md-10 sharePricePercentageChange" id="red"> <%= @get_quotes["quotes"]["quote"]["change"]%><i class="fa fa-arrow-down"></i>  &nbsp;  <%= @get_quotes["quotes"]["quote"]["change_percentage"]%>%
+  </div>
+  <%end%>
 
-<li>Symbol: <%= @stock.symbol %></li>
+  <div>
+    <!-- <div class="col-md-2">Previous close:<%=    @stock.previous_close %></div> -->
+    <div class="col-md-12 eps">Eps estimate next quarter:  <%= @stock.eps_estimate_next_quarter%></div>
+
+
+  </div>
+
+
+<br/>
+<br/>
+<br/>
+<br/>
+
+<div class="container">
+  <div class="col-md-4 votes">Total buy votes: <%= @buy_votes %></div>
+
+  <div class="col-md-4 votes">Total sell votes: <%= @sell_votes %></div>
+
+  <div class="col-md-4 votes">Total Hold votes: <%= @hold_votes %>
+</div>
+
+
+ <div class="container">
+
+   <div class="col-md-4"><%= link_to "Buy", "/votes?vote=buy&company=#{@company.id}", method: :post %></div>
+
+   <div class="col-md-4"><%= link_to "Sell", "/votes?vote=sell&company=#{@company.id}", method: :post %></div>
+
+   <div class="col-md-4"><%= link_to "Hold", "/votes?vote=hold&company=#{@company.id}", method: :post %></div>
+ </div>
+
+ <br/>
+ <br/>
+ 
+Five day buy votes: <%= @five_day_buy_votes %><br>
+Five day sell votes: <%= @five_day_sell_votes %><br>
+Five day hold votes: <%= @five_day_hold_votes %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"><%= pie_chart @company_votes %> </div>
+    <div class="col-md-2"><%= pie_chart @company_votes %> </div>
+    <div class="col-md-2"><%= pie_chart @company_votes %> </div>
+    <div class="col-md-2"><%= pie_chart @company_votes %> </div>
+    <div class="col-md-2"><%= pie_chart @company_votes %> </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2"><%= line_chart @companies %> </div>
+      <div class="col-md-2"><%= line_chart @companies %> </div>
+      <div class="col-md-2"><%= line_chart @companies %> </div> 
+      <div class="col-md-2"><%= line_chart @companies %> </div>
+      <div class="col-md-2"><%= line_chart @companies %> </div>
+  </div>
+</div>
+
+<ul>
 
 <li>Ask: <%= @stock.ask %></li>
 
@@ -23,51 +88,9 @@
 
 <li>Eps estimate next quarter : <%= @stock.eps_estimate_next_quarter%></li>
 
-<li>LAST---: <%= @get_quotes["quotes"]["quote"]["last"]%></li>
+<li>LAST---: <%= @get_quotes["quotes"]["quote"]["change_percentage"]%></li>
+
 </ul>
-
-
-
-
-
-<br />
-
-Total buy votes: <%= @buy_votes %>
-<br />
-Total sell votes: <%= @sell_votes %>
-<br />
-Total Hold votes: <%= @hold_votes %>
-<br/>
-
- <%= link_to "Buy", "/votes?vote=buy&company=#{@company.id}", method: :post %>
- <%= link_to "Sell", "/votes?vote=sell&company=#{@company.id}", method: :post %>
- <%= link_to "Hold", "/votes?vote=hold&company=#{@company.id}", method: :post %>
- <br/>
- <br/>
- <br/>
- <br/>
-Five day buy votes : <%= @five_day_buy_votes %><br>
-Five day sell votes :<%= @five_day_sell_votes %><br>
-Five day hold votes :<%= @five_day_hold_votes %>
-
-<div class="row">
-  <div class="class">
-    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
-    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
-    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
-    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
-    <div class="col-md-2"<%= pie_chart @company_votes %>> </div>
-  </div>
-</div>
-
-<%= line_chart @companies %>
-<%= line_chart @companies %>
-<%= line_chart @companies %>
-<%= line_chart @companies %>
-<%= line_chart @companies %>
-
-
-
 
 
 

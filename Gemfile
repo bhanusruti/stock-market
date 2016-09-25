@@ -10,7 +10,7 @@ gem 'faker'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-sass'
+# gem 'bootstrap-sass'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -24,6 +24,7 @@ gem "chartkick"
 gem 'jquery-rails'
 gem 'groupdate'
 gem 'unirest'
+gem 'font-awesome-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 gem "stock_quote"

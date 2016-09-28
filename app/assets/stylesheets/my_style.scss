@@ -1,0 +1,183 @@
+body, h1, h2, h3, h4, h5, h6 {
+  color: #0f304c;
+}
+
+a {
+  color: #396b91;
+}
+
+a:hover {
+  color: #9ebfd8;
+}
+
+.everyone{
+  font-size: 20px;
+}
+
+.names{
+  font-size: 18px;
+}
+
+.company_names_size{
+  a {
+
+    font-size: 16px ;
+  }
+}
+
+#search_table {
+  text-align: center;
+
+  th {
+    text-align: center;
+  }
+}
+
+#page-top {
+  padding-top: 150px;
+}
+
+footer {
+  margin-top: 200px;
+}
+
+.companyName {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 18px;
+
+}
+
+.companySymbol{
+  font-weight: bold;
+  font-size: 1.5em;
+
+
+}
+
+.companySharePrice {
+  font-weight: bold;
+  font-size: 1.5em;
+
+}
+
+.sharePricePercentageChange {
+  font-weight: bold;
+  font-size: 1.5em;
+  
+}
+  #red {
+    color: red;
+  }
+
+  #green {
+    color: green;
+  }
+
+.eps{
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.votes{
+  margin-top: 20px;
+}
+
+.fadeInDown{
+  color: white;
+  font-size: 3em;
+  margin-top: 350px;
+}
+
+#slides{
+  margin-top: -150px;
+}
+
+.votes {
+  font-size: 1.5em;
+  color: black;
+
+
+  .voteNumber {
+    font-size: 4em;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+
+  .voteSubheading {
+    font-size: 0.8em;
+    color: gray;
+    margin-bottom: 25px;
+  }
+
+  .btn {
+    border: 1px solid;
+  }
+
+}
+
+.prevClose{
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+.box{
+  background-color: lightgrey;
+  // width: 300px;
+  border: 2px solid black;
+  padding: 25px;
+  margin: 25px;
+
+  height: 250px;
+
+  text-align: center;
+
+  .heading{
+    font-size: 1.2em;
+    font-weight: 200px;
+    margin-bottom: 20px;
+
+  }
+
+  .value{
+    font-size: 2em;
+
+  }
+}
+
+
+.navbar-default {
+  height: 100px;
+  padding-top: 32px;
+}
+
+.sitelogo {
+  width: 160px;
+}
+
+
+.navbar .nav > li a{color:#0f304c;}
+.navbar .nav > li a:hover, a.btn-navbar:hover{background: #9ebfd8;color:#000000;}
+
+.btn:hover {
+  background-color: #9ebfd8;
+}
+
+.company_list_names {
+  font-size: 18px;
+}
+
+// #center{
+//   text-align: center;
+// }
+
+// ::selection{background:orange;color:#000000;}
+
+
+// .class // class="class"
+// #id // div id="sdsdsd"
+// footer // <footer> or <div>
+// div 
+// body 

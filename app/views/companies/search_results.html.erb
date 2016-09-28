@@ -1,19 +1,19 @@
 <div class="row">
   <div class="col-md-3"></div>
   <div class="col-md-6">
-  <p>Search Results</p>
+  <h1 text-align="center">Search Results</h1>
   <br />
    <table id="search_table" class="table">
     <tr>
-      <th>Company Name</th>
-      <th>Company Code</th>
+      <th class="names">Company Name</th>
+      <th class="names">Company Code</th>
     </tr>
     
 
     <% @companies.each do |company| %>
     <tr>
-      <td><%= link_to company.company_name, "/companies/#{company.id}" %></td>
-      <td><%= link_to company.company_code, "/companies/#{company.id}" %></td>   
+      <td class="company_names_size"><%= link_to company.company_name, "/companies/#{company.id}" %></td>
+      <td class="company_names_size"><%= link_to company.company_code, "/companies/#{company.id}" %></td>   
       <!-- company in company.id is the name in the do |company| -->
     </tr>
     <%end %>

@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get '/logout', to: 'sessions#destroy'
 
   get '/signup', to: 'users#new'
-  get '/home', to: 'users#show'
+  get '/home', to: 'pages#home'
   post '/users', to: 'users#create'
 
   get '/about', to: 'pages#about'

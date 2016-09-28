@@ -1,0 +1,27 @@
+<h1 align="center">Here are list of few companies you can check or search for one in the search bar </h1>
+
+<br />
+<br />
+
+
+<div class="container">
+  <div class="col-md-3"></div>
+    <div class = "col-md-6">
+      <table class = "table">
+
+        <tr>
+          <!-- <th>Company Name</th> -->
+          <!-- <th>Company Code</th> -->
+        </tr>
+
+        <% @companies.each do |company|%>
+        <tr>
+          <th style="text-align:center"><%= link_to company.company_name, "/companies/#{company.id}", class: "company_list_names" %></th>
+          <!-- <th><%= company.company_code %></th> -->
+        </tr>
+        <%end%>
+      </table>
+    </div>
+</div>
+
+

@@ -44,26 +44,26 @@ class CompaniesController < ApplicationController
     @company_info = Unirest.get(query).body
     puts @company_info
 
-    # Votes from 5 days ago for choice buy
-    @five_day_buy_votes = Vote.where(created_at: 5.day.ago, choice: "buy").count
-    @five_day_buy_votes = Vote.where(created_at: 4.day.ago, choice: "buy").count
-    @five_day_buy_votes = Vote.where(created_at: 3.day.ago, choice: "buy").count
-    @five_day_buy_votes = Vote.where(created_at: 2.day.ago, choice: "buy").count
-    @five_day_buy_votes = Vote.where(created_at: 1.day.ago, choice: "buy").count
+    # # Votes from 5 days ago for choice buy
+    # @five_day_buy_votes = Vote.where(created_at: 5.day.ago, choice: "buy").count
+    # @five_day_buy_votes = Vote.where(created_at: 4.day.ago, choice: "buy").count
+    # @five_day_buy_votes = Vote.where(created_at: 3.day.ago, choice: "buy").count
+    # @five_day_buy_votes = Vote.where(created_at: 2.day.ago, choice: "buy").count
+    # @five_day_buy_votes = Vote.where(created_at: 1.day.ago, choice: "buy").count
 
-    # votes from 5 days ago for choice sell
-    @five_day_sell_votes = Vote.where(created_at: 5.day.ago, choice: "sell").count
-    @five_day_sell_votes = Vote.where(created_at: 4.day.ago, choice: "sell").count
-    @five_day_sell_votes = Vote.where(created_at: 3.day.ago, choice: "sell").count
-    @five_day_sell_votes = Vote.where(created_at: 2.day.ago, choice: "sell").count
-    @five_day_sell_votes = Vote.where(created_at: 1.day.ago, choice: "sell").count
+    # # votes from 5 days ago for choice sell
+    # @five_day_sell_votes = Vote.where(created_at: 5.day.ago, choice: "sell").count
+    # @five_day_sell_votes = Vote.where(created_at: 4.day.ago, choice: "sell").count
+    # @five_day_sell_votes = Vote.where(created_at: 3.day.ago, choice: "sell").count
+    # @five_day_sell_votes = Vote.where(created_at: 2.day.ago, choice: "sell").count
+    # @five_day_sell_votes = Vote.where(created_at: 1.day.ago, choice: "sell").count
 
-    # votes from 5 days ago for choice hold
-    @five_day_hold_votes = Vote.where(created_at: 5.day.ago, choice: "hold").count
-    @five_day_hold_votes = Vote.where(created_at: 4.day.ago, choice: "hold").count
-    @five_day_hold_votes = Vote.where(created_at: 3.day.ago, choice: "hold").count
-    @five_day_hold_votes = Vote.where(created_at: 2.day.ago, choice: "hold").count
-    @five_day_hold_votes = Vote.where(created_at: 1.day.ago, choice: "hold").count
+    # # votes from 5 days ago for choice hold
+    # @five_day_hold_votes = Vote.where(created_at: 5.day.ago, choice: "hold").count
+    # @five_day_hold_votes = Vote.where(created_at: 4.day.ago, choice: "hold").count
+    # @five_day_hold_votes = Vote.where(created_at: 3.day.ago, choice: "hold").count
+    # @five_day_hold_votes = Vote.where(created_at: 2.day.ago, choice: "hold").count
+    # @five_day_hold_votes = Vote.where(created_at: 1.day.ago, choice: "hold").count
     
     
   end

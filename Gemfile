@@ -25,6 +25,7 @@ gem 'jquery-rails'
 gem 'groupdate'
 gem 'unirest'
 gem 'font-awesome-rails'
+gem 'faker'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
 gem "stock_quote"

@@ -7,9 +7,9 @@
     </tr>
 
     <% @companies.each do |company|%>
-      <tr>
-        <th><%= company.company_name %></th>
-        <th><%= company.company_code %></th>
+      <tr >
+        <th class="company_names_size"><%= company.company_name %></th>
+        <th class="company_names_size"><%= company.company_code %></th>
       </tr>
     <%end%>
   </table>
